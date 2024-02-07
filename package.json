@@ -4,5 +4,8 @@
 	"description": "Dynamic Programming repo",
 	"main": "src/index.js",
 	"author": "Hamid Zadeh",
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"jest": "^29.7.0"
+	}
 }
