@@ -1,11 +1,14 @@
 {
-	"name": "dynamic_programming",
-	"version": "1.0.0",
-	"description": "Dynamic Programming repo",
-	"main": "src/index.js",
-	"author": "Hamid Zadeh",
-	"license": "MIT",
-	"devDependencies": {
-		"jest": "^29.7.0"
-	}
+  "name": "dynamic_programming",
+  "version": "1.0.0",
+  "description": "Dynamic Programming repo",
+  "main": "src/index.js",
+  "author": "Hamid Zadeh",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }
