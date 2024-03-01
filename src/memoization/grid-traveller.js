@@ -12,18 +12,16 @@
 // };
 
 // recursive solution using memoization
-const gridTraveller = (m, n, memo = {}) => {
-	const key = `${m}, ${n}`;
+function gridTraveller(m, n, memo = {}) {
+  const key = `${m}, ${n}`;
 
-	if (key in memo) return memo[key];
-	if (m === 1 && n === 1) return 1;
-	if (m === 0 || n === 0) return 0;
+  if (key in memo) return memo[key];
+  if (m === 1 && n === 1) return 1;
+  if (m === 0 || n === 0) return 0;
 
-	memo[key] = gridTraveller(m - 1, n, memo) + gridTraveller(m, n - 1, memo);
+  memo[key] = gridTraveller(m - 1, n, memo) + gridTraveller(m, n - 1, memo);
 
-	return memo[key];
-};
+  return memo[key];
+}
 
-module.exports = {
-	gridTraveller: gridTraveller,
-};
+export default gridTraveller;

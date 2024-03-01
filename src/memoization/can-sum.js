@@ -7,23 +7,21 @@
 // You may use an element of the array as many times as needed.
 // You may assume that all input numbers are nonnegative.
 
-const canSum = (targetSum, numbers, memo = {}) => {
+function canSum(targetSum, numbers, memo = {}) {
   if (targetSum in memo) return memo[targetSum];
   if (targetSum === 0) return true;
   if (targetSum < 0) return false;
 
-  for (num of numbers) {
+  for (const num of numbers) {
     const newTargetSum = targetSum - num;
 
     memo[newTargetSum] = canSum(newTargetSum, numbers, memo);
   }
 
   return memo[0] || false;
-};
+}
 
-module.exports = {
-  canSum: canSum,
-};
+export default canSum;
 
 //                                                  7, [2, 3]
 
