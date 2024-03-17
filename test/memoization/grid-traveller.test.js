@@ -49,6 +49,18 @@ describe("GridTraveller", () => {
     expect(gridTraveller(m, n)).toBe(6);
   });
 
+  it("returns correct number of steps given m, n are 3, 4, repsectively", () => {
+    const m = 3;
+    const n = 4;
+    expect(gridTraveller(m, n)).toBe(10);
+  });
+
+  it("returns correct number of steps given m, n are 4, 4, repsectively", () => {
+    const m = 4;
+    const n = 4;
+    expect(gridTraveller(m, n)).toBe(20);
+  });
+
   it("returns correct number of steps given m, n are 100, 100, repsectively", () => {
     const m = 18;
     const n = 18;
