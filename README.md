@@ -3,7 +3,21 @@
 This repo will host all my notes relating to
 [Dynamic Programming](https://www.youtube.com/watch?v=oBt53YbR9Kk&t=283s)
 
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [Part One](#part-one)
+  - [Memoization](#memoization)
+- [Part Two](#part-two)
+  - [Tabulation](#tabulation)
+- [Conclusion](#conclusion)
+
+<!-- TOC end -->
+
+<!-- TOC --><a name="part-one"></a>
+
 ## Part One
+
+<!-- TOC --><a name="memoization"></a>
 
 ### Memoization
 
@@ -27,7 +41,11 @@ The recipe for this can be described in 2 steps;
      return it
    - **Store return values into the memo**.
 
+<!-- TOC --><a name="part-two"></a>
+
 ## Part Two
+
+<!-- TOC --><a name="tabulation"></a>
 
 ### Tabulation
 
@@ -53,6 +71,8 @@ The recipe for this can be described in 4 steps;
      the table. Looking again at the `fibonacci(n)` function, `n1` and `n2` were
      added together to produce `n3`. Similarly, `n2` and `n3` were added
      together to calculate `n4` and so on until the target is reached.
+
+<!-- TOC --><a name="conclusion"></a>
 
 ## Conclusion
 
